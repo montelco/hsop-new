@@ -1,0 +1,74 @@
+$rcgc_blue: #002f6c;
+$rcgc_yellow: #eaaa00;
+
+body {
+    div#fullpage {
+        font-family: sans-serif;
+        color: white;
+        .section {
+            text-align:center;
+            overflow: hidden;
+        }
+        #section0 {
+            overflow: hidden;
+            .boxedIn {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 53vh;
+                color: $rcgc_blue;
+                border-radius: 50%;
+                background: white;
+                border-right: 0.75rem solid $rcgc_yellow;
+                border-left: 0.75rem solid $rcgc_blue;
+                border-top: 0.75rem solid $rcgc_blue;
+            }
+            #vidContainer{
+                background: rgba(0,47,108,0.6);
+                width: 100%;
+                height: 100%;
+                z-index: 4;
+                object-fit: cover;
+                position: relative;
+            }
+            #myVideo{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                top:0;
+                right:0;
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+                background-color: black;
+                background-position: center center;
+                background-size: contain;
+                object-fit: cover;
+                z-index:3;
+            }
+        }
+        div.layer {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 4;
+            width: 100%;
+            -webkit-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+        .fp-tableCell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .boxedIn {
+                height: 50vh;
+                background: rgba(255,255,255,0.9);
+                width: 60vw;
+                padding: 2rem;                   
+            }
+        }
+    }
+}

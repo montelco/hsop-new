@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HSOP Homepage FW/FP</title>
+    <link rel="stylesheet" href="../bower_components/fullpage.js/dist/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="../resources/css/compiled.min.css">
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section" id="section0" data-src="../resources/graphics/image.png">
+            <section id="vidContainer">
+            </section>
+            <video id="myVideo" loop muted data-autoplay>
+                <source data-src="../resources/graphics/video.webm" type="video/webm" />
+                <source data-src="../resources/graphics/video.mp4" type="video/mp4" />
+            </video>
+            <div class="layer">
+                <div class="boxedIn">
+                    <h1>Hello World</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="boxedIn">
+                <h1>This is a test</h1>
+            </div> 
+        </div>
+        <div class="section">
+            <div class="boxedIn">
+                <h1>To See How It'll All Look</h1>
+            </div>
+        </div>
+        <div class="section">
+            <div class="boxedIn">
+                <h1>Hopefully Half Decent</h1>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                sectionsColor: ['#002f6c', '#eaaa00', '#002f6c', '#eaaa00']
+            });
+        });
+    </script>
+</body>
+</html>
