@@ -2,6 +2,15 @@ $rcgc_blue: #002f6c;
 $rcgc_yellow: #eaaa00;
 
 body {
+    header {
+        position: fixed;
+        display: block;
+        width: 100%;
+        z-index: 9999;
+        height: 80px;
+        // background-color: $rcgc_blue;
+    }
+    
     div#fullpage {
         font-family: sans-serif;
         color: white;
