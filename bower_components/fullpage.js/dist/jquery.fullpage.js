@@ -1077,6 +1077,14 @@
             }else{
                 // moved up/down
                 scrollSection();
+                if($("#section0").hasClass('active')) {
+                    console.log("helloworld");
+                    if( $("header").hasClass('bg')) {
+                        $("header").removeClass("bg");
+                    }
+                } else {
+                    $("header").addClass("bg");
+                }
             }
         }
 
