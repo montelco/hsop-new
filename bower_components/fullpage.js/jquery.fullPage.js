@@ -2466,6 +2466,7 @@
 
             //adding the current anchor
             $body.addClass(VIEWING_PREFIX + '-' + text);
+            console.log(text);
         }
 
         /**
@@ -2909,5 +2910,5 @@
             console && console[type] && console[type]('fullPage: ' + text);
         }
 
-    }; //end of $.fn.fullpage
+    }; //end of $.fn.fullpage0
 });

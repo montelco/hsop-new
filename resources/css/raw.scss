@@ -1,14 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 $rcgc_blue: #002f6c;
+$rcgc_grey_accent: #98a1ad;
 $rcgc_yellow: #eaaa00;
+$height: 58px;
+$font-family: 'Open Sans', sans-serif;
+$font-color: white;
+$font-size: 16px;
+
+/* Header Styles for CTA */
+$catchy-subline-size: 3rem; 
+$catchy: #005496;
+$catchy-subline: #F0961E;
+$catchy-small: #4e5c67;
+$cta-bg: #5C92BC;
+$cta-text: #E7EFF5;
 
 body {
+    font-family: $font-family;
     header {
         position: fixed;
         display: block;
         width: 100%;
         z-index: 9999;
         height: 80px;
-        // background-color: $rcgc_blue;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0rem 1rem;
+            logo{
+                width: 5.57 * $height;
+                height: $height;
+                background-image: url(https://www.rcgc.edu/_catalogs/masterpage/rcgc-1-1-assets/images/logo.png);
+                background-size: contain;
+                display: inline-block;
+            }
+            h1{
+                color: $font-color;
+                margin-left: 4.5em;
+                @media screen and (max-width: 414px) {
+                    display: none;
+                }
+            }
+            nav{
+                display:flex;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    li {
+                        a{
+                            font-size: 1.5em;
+                            color: $font-color;
+
+                            &:active{
+                                color: $font-color;
+                            }
+                            &:hover{
+                                color: $font-color;
+                            }
+                            &:visited{
+                                color: $font-color;
+                            }
+                        }
+                        &:not(:nth-of-type(1)){
+                            padding-left: 1em;    
+                        }
+                        
+                    }
+                }
+            }
+        }
+        &.bg{
+            background-color: $rcgc_grey_accent;
+            box-shadow: 0rem 0.25rem 0.75rem rgba(0,0,0,0.5);
+        }
+        .transparent{
+            background-color: rgba(0,47,108,0);
+        }
+        
     }
     
     div#fullpage {
@@ -23,6 +93,7 @@ body {
             .boxedIn {
                 position: relative;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 width: 53vh;
@@ -32,6 +103,36 @@ body {
                 border-right: 0.75rem solid $rcgc_yellow;
                 border-left: 0.75rem solid $rcgc_blue;
                 border-top: 0.75rem solid $rcgc_blue;
+                h1 {
+                    span{
+                        &.jumbo{
+                            color: $catchy;
+                            font-size: 1.875 * $catchy-subline-size;
+                        }
+                        &.md-jumbo{
+                            color: $catchy-subline;
+                            font-size: $catchy-subline-size;
+                        }
+                    }
+                    margin-bottom: $catchy-subline-size / 2;
+                }
+                h2{
+                    color: $catchy-small;
+                    font-size: $catchy-subline-size / 2.5;
+                    margin-bottom: $catchy-subline-size / 2;
+                }
+
+                .cta{
+                    color: $cta-text;
+                    font-size: $catchy-subline-size / 2.15;
+                    padding: $catchy-subline-size / 1.75;
+                    border: none;
+                    border-radius: $catchy-subline-size / 9;
+                    background: $cta-bg;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
             #vidContainer{
                 background: rgba(0,47,108,0.6);

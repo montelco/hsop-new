@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="../resources/css/compiled.min.css">
 </head>
 <body>
-    <header id="top">
-        <logo>
-        </logo>
-        <nav>
-            <ul>
-                <li><a href="#top">Home</a></li>
-                <li><a href="#">Make an Appointment</a></li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
-        </nav>
+    <header id="top" class="bg">
+        <div class="container">
+            <logo>
+            </logo>
+            <h1 class="hidden-mbl">High School Option Program</h1>
+            <nav>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#">Make an Appointment</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div id="fullpage">
         <div class="section" id="section0" data-src="../resources/graphics/image.png">
@@ -28,7 +31,9 @@
             </video>
             <div class="layer">
                 <div class="boxedIn">
-                    <h1>Hello World</h1>
+                    <h1><span class="jumbo">Save 65%</span><br><span class="md-jumbo">On Tuition & Fees</span></h1>
+                    <h2>Earn College Credit<br>While in High School</h2>
+                    <button class="cta"><span>Apply Now</span></button>
                 </div>
             </div>
         </div>
@@ -54,7 +59,7 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 verticalCentered: true,
-                sectionsColor: ['#002f6c', '#eaaa00', '#002f6c', '#eaaa00']
+                sectionsColor: ['#002f6c', '#eaaa00', '#002f6c', '#eaaa00', '#002f6c', '#eaaa00', '#002f6c', '#eaaa00']
             });
         });
     </script>
