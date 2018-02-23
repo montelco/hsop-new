@@ -13,7 +13,7 @@ $catchy-subline-size: 3rem;
 $catchy: #005496;
 $catchy-subline: #F0961E;
 $catchy-small: #4e5c67;
-$cta-bg: #5C92BC;
+$cta-bg: #3c729a;
 $cta-text: #E7EFF5;
 
 body {
@@ -83,7 +83,7 @@ body {
             }
         }
         &.bg{
-            background-color: $rcgc_grey_accent;
+            background-color: #002f6ccc;
             box-shadow: 0rem 0.25rem 0.75rem rgba(0,0,0,0.5);
         }
         .transparent{
@@ -98,6 +98,34 @@ body {
         .section {
             text-align:center;
             overflow: hidden;
+            .slide {
+                .boxedIn {
+                    color: black;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        left: 0;
+                        color: $cta-bg;
+                        &.number{
+                            color: rgba(106, 142, 169, .6);
+                            font-size:  4 * $catchy-subline-size;
+                            top: 0;
+                            z-index: 5;
+                        }
+                        &.step-head {
+                            color: rgba(106, 142, 169, .3);
+                            bottom: 5rem;
+                            left: -6rem;
+                            font-size: 3.5 * $catchy-subline-size;
+                            text-transform: lowercase;
+                            -webkit-transform: rotate(-90deg);
+                            -moz-transform: rotate(-90deg);
+                            -ms-transform: rotate(-90deg);
+                            -o-transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
         }
         #section0 {
             overflow: hidden;
