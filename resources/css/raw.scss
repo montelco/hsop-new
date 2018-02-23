@@ -18,6 +18,17 @@ $cta-text: #E7EFF5;
 
 body {
     font-family: $font-family;
+    #fp-nav.right {
+        ul {
+            li {
+                a {
+                    span {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
     header {
         position: fixed;
         display: block;
