@@ -1,0 +1,40 @@
+div#fullpage {
+    #section0 {
+        overflow: hidden;
+        .boxedIn {
+            width: 30vh;
+            height: 30vh;
+            h1 {
+                span{
+                    &.jumbo{
+                        color: $catchy;
+                        font-size: 2.25 * $mbl_catchy_ss;
+                    }
+                    &.md-jumbo{
+                        color: $catchy-subline;
+                        font-size: 1.35 * $mbl_catchy_ss;
+                    }
+                }
+                margin-bottom: $mbl_catchy_ss / 4;
+            }
+            h2{
+                color: $catchy-small;
+                font-size: $mbl_catchy_ss * 0.95;
+                margin-bottom: $mbl_catchy_ss / 3;
+            }
+
+            .cta{
+                color: $cta-text;
+                font-size: $mbl_catchy_ss;
+                padding: $mbl_catchy_ss * 1.125;
+                line-height: $mbl_catchy_ss - 1;
+                border: none;
+                border-radius: $mbl_catchy_ss / 9;
+                background: $cta-bg;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

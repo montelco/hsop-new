@@ -3,20 +3,23 @@ header {
     display: block;
     width: 100%;
     z-index: 9999;
-    height: 80px;
+    height: $height;
     .container{
         display: flex;
+        height: $height;
         align-items: center;
         justify-content: space-between;
         padding: 0rem 1rem;
-        logo{
-            width: 5.57 * $height;
-            height: $height;
-            background-image: url(https://www.rcgc.edu/_catalogs/masterpage/rcgc-1-1-assets/images/logo.png);
-            background-size: contain;
-            display: inline-block;
-            background-repeat: no-repeat;
+        .logoContainer {
+            flex: 1;
+            .logo{
+                width: 5.57 * ($height / 2);
+                height: ($height / 2);
+                display: inline-block;
+                flex: 1;
+            }
         }
+        
         h1{
             color: $font-color;
             margin-left: 4.5em;
@@ -25,31 +28,10 @@ header {
             }
         }
         nav{
-            display:flex;
-            ul {
-                list-style: none;
-                display: flex;
-                li {
-                    a{
-                        font-size: 1.5em;
-                        color: $font-color;
-
-                        &:active{
-                            color: $font-color;
-                        }
-                        &:hover{
-                            color: $font-color;
-                        }
-                        &:visited{
-                            color: $font-color;
-                        }
-                    }
-                    &:not(:nth-of-type(1)){
-                        padding-left: 1em;    
-                    }
-                    
-                }
-            }
+            display:none;
+        }
+        nav.mbl {
+           flex: 1;
         }
     }
     &.bg{
