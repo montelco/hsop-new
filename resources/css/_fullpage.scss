@@ -103,6 +103,13 @@ div#fullpage {
             z-index:3;
         }
     }
+    #steps {
+        background: url(https://photos.smugmug.com/photos/i-KFDctPF/0/a0c4e873/X3/i-KFDctPF-X3.jpg) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
     div.layer {
         position: absolute;
         display: flex;

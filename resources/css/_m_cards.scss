@@ -1,0 +1,43 @@
+.active{
+    &#steps{
+        transform: translate(0, -10%);
+    }
+   .fp-controlArrow {
+        &.fp-prev {
+            border-width: 24.5px 20px 24.5px 0;
+            border-color: transparent rgba(212, 212, 212, 0.75) transparent transparent;
+        }
+        &.fp-next {
+            border-width: 24.5px 0 24.5px 20px;
+            border-color: transparent transparent transparent rgba(212, 212, 212, 0.75);
+        }
+    }
+    div#fullpage & .slide {
+        .boxedIn {
+            color: black;
+            position: relative;
+            span {
+                position: absolute;
+                left: 0;
+                color: $cta-bg;
+                &.number{
+                    color: rgba(106, 142, 169, .4);
+                    font-size:  4 * $mbl_catchy_ss;
+                    top: 0;
+                    z-index: 5;
+                }
+                &.step-head {
+                    color: rgba(106, 142, 169, .1);
+                    bottom: 2rem;
+                    left: -3rem;
+                    font-size: 5.5 * $mbl_catchy_ss;
+                    text-transform: lowercase;
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                }
+            }
+        }
+    } 
+}
