@@ -1,0 +1,10 @@
+video#myVideo{
+    source[type='video/webm'], source[type='video/mp4']{
+        display: none;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
