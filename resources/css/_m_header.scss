@@ -23,9 +23,6 @@ header {
         h1{
             color: $font-color;
             margin-left: 4.5em;
-            @media screen and (max-width: 414px) {
-                display: none;
-            }
         }
         nav:not(.mbl){
             display:none;
