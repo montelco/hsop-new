@@ -1,14 +1,4 @@
-div#fullpage{
-    #steps{
-        background: linear-gradient(to bottom, rgba(234,170,0,0.6), rgba(234,170,0,0.6)), url(https://ucarecdn.com/e06286fa-87d8-49fc-b3d0-439636e6b058/-/crop/768x1067/350,0/-/scale_crop/414x736/-/progressive/yes/-/quality/lightest/) !important;
-        background-size: contain;
-    }
-    #about {
-        background: linear-gradient(to bottom, rgba(0,47,108,0.6), rgba(0,47,108,0.6)), url(https://ucarecdn.com/1cd0a5a5-113d-44a8-8dd0-30a6814d4dfd/-/crop/768x1067/500,0/-/scale_crop/414x736/-/progressive/yes/-/quality/lightest/) !important;
-        background-size: contain;
-    }
-}
-.active{
+.fp-section{
    .fp-controlArrow {
         &.fp-prev {
             border-width: 24.5px 20px 24.5px 0;
@@ -21,8 +11,6 @@ div#fullpage{
     }
     div#fullpage & .slide {
         .boxedIn {
-            color: black;
-            position: relative;
             span {
                 position: absolute;
                 left: 0;

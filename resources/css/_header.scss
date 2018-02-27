@@ -49,6 +49,11 @@ header {
                 }
             }
         }
+        @media screen and (min-width: 769px) {
+            nav.mbl{
+                display: none;
+            }
+        }
     }
     &.bg{
         background-color: $dark_slate_grey;
