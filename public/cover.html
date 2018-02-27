@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../bower_components/fullpage.js/dist/jquery.fullpage.min.css">
+    <script src="../bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                navigation: true,
+                continuousHorizontal:true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Home', 'Application Process', 'Stats', 'Testimonials']
+            });
+        });
+    </script>
+</head>
+<body>
+    <style>
+        #one {
+        background: url(https://ucarecdn.com/e06286fa-87d8-49fc-b3d0-439636e6b058/-/progressive/yes/-/quality/lightest/) center no-repeat !important;
+            background-size: cover;
+        }
+        #two {
+            background-image: url(https://ucarecdn.com/1cd0a5a5-113d-44a8-8dd0-30a6814d4dfd/);
+            background-size: cover;
+        }
+        #two:before{
+            position: absolute;
+            content: "";
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to bottom, rgba(234,170,0,0.6), rgba(234,170,0,0.6));
+        }
+        #two .content{
+            /*z-index: 10;*/
+        }
+        #three {
+            background-image: url(https://ucarecdn.com/f7a55338-ea7b-42c8-9cd5-4bd4d29cf0b9/-/progressive/yes/-/quality/lightest/);
+            background-size: cover;
+        }
+    </style>
+    <div id="fullpage">
+        <div class="section" id="one">
+        </div>
+        <div class="section" id="two">
+            <span class="content">HELLO WORLD</span>
+            buttcheeks
+        </div>
+        <div class="section" id="three">
+        </div>
+    </div>
+</body>
+</html>
