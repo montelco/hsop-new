@@ -19,6 +19,10 @@ $cta-bg: #3c729a;
 $cta-text: #E7EFF5;
 $dark_slate_grey: #2F4856;
 
+@mixin shade($strength) {
+    box-shadow: 0rem 0.5rem 0.75rem rgba(0,0,0,$strength);
+}
+
 @import 'base';
 @import 'navdots';
 @import 'header';
