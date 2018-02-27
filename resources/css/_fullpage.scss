@@ -122,6 +122,15 @@ div#fullpage {
             background-position: center;  
         }
     }
+    #testimonials {
+        background: linear-gradient(to bottom, rgba(234,170,0,0.6), rgba(234,170,0,0.6)), url(https://ucarecdn.com/f7a55338-ea7b-42c8-9cd5-4bd4d29cf0b9/-/progressive/yes/-/quality/lightest/) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        @media screen and (min-width: 768px) {
+            background-position: center;  
+        }
+    }
     div.layer {
         position: absolute;
         display: flex;

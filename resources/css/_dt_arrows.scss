@@ -1,0 +1,12 @@
+.fp-section{
+   .fp-controlArrow {
+        &.fp-prev {
+            left: 3rem;
+            border-color: transparent rgba(232, 232, 232, 0.85) transparent transparent;
+        }
+        &.fp-next {
+            right: 3rem;
+            border-color: transparent transparent transparent rgba(232, 232, 232, 0.85);
+        }
+    }
+}
