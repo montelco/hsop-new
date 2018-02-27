@@ -104,11 +104,14 @@ div#fullpage {
         }
     }
     #steps {
-        background: url(https://photos.smugmug.com/photos/i-KFDctPF/0/a0c4e873/X3/i-KFDctPF-X3.jpg) !important;
+        background: linear-gradient(to bottom, rgba(234,170,0,0.6), rgba(234,170,0,0.6)), url(https://ucarecdn.com/e06286fa-87d8-49fc-b3d0-439636e6b058/-/progressive/yes/-/quality/lightest/) !important;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        background-position: center;
+        @media screen and (min-width: 768px) {
+            background-position: center;  
+        }
+        
     }
     div.layer {
         position: absolute;
