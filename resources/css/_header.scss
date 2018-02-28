@@ -7,6 +7,7 @@ header {
     .container{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 0rem 1rem;
         .logo{
@@ -17,8 +18,10 @@ header {
         }
         h1{
             color: $font-color;
+            font-size: 2em;
+            font-weight: 400;
             margin-left: 4.5em;
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 1361px) {
                 display: none;
             }
         }
@@ -29,14 +32,17 @@ header {
                 display: flex;
                 li {
                     a{
-                        font-size: 1.5em;
+                        font-size: 1.25em;
                         color: $font-color;
+                        font-weight: 400;
+                        text-decoration: none;
 
                         &:active{
                             color: $font-color;
                         }
                         &:hover{
                             color: $font-color;
+                            text-decoration: underline;
                         }
                         &:visited{
                             color: $font-color;

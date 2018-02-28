@@ -15,15 +15,15 @@ div#fullpage {
                     color: $cta-bg;
                     &.number{
                         color: rgba(106, 142, 169, .6);
-                        font-size:  4 * $catchy-subline-size;
+                        font-size:  3 * $catchy-subline-size;
                         top: 0;
                         z-index: 5;
                     }
                     &.step-head {
                         color: rgba(106, 142, 169, .3);
                         bottom: 5rem;
-                        left: -6rem;
-                        font-size: 3.5 * $catchy-subline-size;
+                        left: -4rem;
+                        font-size: 2.25 * $catchy-subline-size;
                         text-transform: lowercase;
                         -webkit-transform: rotate(-90deg);
                         -moz-transform: rotate(-90deg);
@@ -179,6 +179,20 @@ div#fullpage {
             padding: 2rem;                   
             &:not(#seller){
                 overflow-y: scroll;
+                h2{
+                    color: $catchy;
+                    font-size: 2em;
+                }
+            }
+            iframe {
+                &#tc-video {
+                    width: 67.5%;
+                    height: 75%;
+                    @media screen and (max-width: 767px) {
+                        width: 95%;
+                        height: 55%;
+                    }
+                }
             }
         }
     }
