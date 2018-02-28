@@ -53,7 +53,7 @@ div#fullpage {
                 span{
                     &.jumbo{
                         color: $catchy;
-                        font-size: 1.875 * $catchy-subline-size;
+                        font-size: 1.4975 * $catchy-subline-size;
                     }
                     &.md-jumbo{
                         color: $catchy-subline;
@@ -177,6 +177,24 @@ div#fullpage {
             background: rgba(255,255,255,0.9);
             width: 60vw;
             padding: 2rem;                   
+            &:not(#seller){
+                overflow-y: scroll;
+            }
         }
     }
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    opacity:0.1;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
