@@ -1,0 +1,49 @@
+#section5 {
+    .boxedIn:not(#slide1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @media screen and (min-width: 900px){
+            width: 29vh;
+        }
+        .thumbnail {
+          position: relative;
+          width: 125px;
+          height: 125px;
+          overflow: hidden;
+          border-radius: 50%;
+        }
+        .thumbnail img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          height: auto;
+          width: 100%;
+          -webkit-transform: translate(-50%,-50%);
+              -ms-transform: translate(-50%,-50%);
+                  transform: translate(-50%,-50%);
+        }
+        .thumbnail img.portrait {
+          width: 100%;
+          height: auto;
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            button {
+                &.cta{
+                    color: $cta-text;
+                    font-size: $catchy-subline-size / 2.15;
+                    padding: $catchy-subline-size / 1.75;
+                    border: none;
+                    border-radius: $catchy-subline-size / 9;
+                    background: $fab-button;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

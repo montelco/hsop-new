@@ -53,6 +53,46 @@ fab {
     .fp-section .fp-controlArrow.fp-next {
       right: 3rem;
       border-color: transparent transparent transparent rgba(232, 232, 232, 0.85); } }
+#section5 .boxedIn:not(#slide1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  @media screen and (min-width: 900px) {
+    #section5 .boxedIn:not(#slide1) {
+      width: 29vh; } }
+  #section5 .boxedIn:not(#slide1) .thumbnail {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 50%; }
+  #section5 .boxedIn:not(#slide1) .thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  #section5 .boxedIn:not(#slide1) .thumbnail img.portrait {
+    width: 100%;
+    height: auto; }
+  #section5 .boxedIn:not(#slide1) article {
+    display: flex;
+    flex-direction: column; }
+    #section5 .boxedIn:not(#slide1) article button.cta {
+      color: #E7EFF5;
+      font-size: 1.3953488372rem;
+      padding: 1.7142857143rem;
+      border: none;
+      border-radius: 0.3333333333rem;
+      background: #006eff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
 header {
   position: fixed;
   display: block;
