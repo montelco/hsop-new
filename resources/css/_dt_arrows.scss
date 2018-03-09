@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) {
     .fp-section{
        .fp-controlArrow {
+            display: none;
             &.fp-prev {
                 left: 3rem;
                 border-color: transparent rgba(232, 232, 232, 0.85) transparent transparent;

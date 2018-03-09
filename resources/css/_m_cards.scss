@@ -10,7 +10,7 @@
         }
     }
     div#fullpage & .slide {
-        .boxedIn {
+        .boxedIn:not(.videoBoxedIn) {
             span {
                 position: absolute;
                 left: 0;
@@ -33,6 +33,12 @@
                     -o-transform: rotate(-90deg);
                 }
             }
+        }
+        .videoBoxedIn{
+            iframe{
+                border-top-right-radius: 2px;
+                border-top-left-radius: 2px;
+            } 
         }
     } 
 }

@@ -74,14 +74,14 @@ div#fullpage {
                 padding: $catchy-subline-size / 1.75;
                 border: none;
                 border-radius: $catchy-subline-size / 9;
-                background: $cta-bg;
+                background: $fab-button;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
         }
         #vidContainer{
-            background: rgba(0,47,108,0.6);
+            background: rgba(34, 40, 48, 0.75);
             width: 100%;
             height: 100%;
             z-index: 4;
@@ -104,7 +104,7 @@ div#fullpage {
             z-index:3;
         }
     }
-    #steps {
+    #section1 {
         background-image: url(https://ucarecdn.com/e06286fa-87d8-49fc-b3d0-439636e6b058/-/format/auto/-/progressive/yes/-/quality/lightest/);
         background-position: center;
         background-repeat: no-repeat;
@@ -118,10 +118,10 @@ div#fullpage {
             top: 0;
             left: 0;
             z-index: -2;
-            background: linear-gradient(to bottom, rgba(234,170,0,0.6), rgba(234,170,0,0.6));
+            background: linear-gradient(to bottom, rgba(95, 84, 50, 0.8), rgba(95, 84, 50, 0.8));
         }
     }
-    #about {
+    #section2 {
         background-image: url(https://ucarecdn.com/1cd0a5a5-113d-44a8-8dd0-30a6814d4dfd/-/format/auto/-/progressive/yes/-/quality/lightest/);
         background-position: center;
         background-repeat: no-repeat;
@@ -135,10 +135,10 @@ div#fullpage {
             top: 0;
             left: 0;
             z-index: -2;
-            background: linear-gradient(to bottom, rgba(0,47,108,0.6), rgba(0,47,108,0.6))
+            background: linear-gradient(to bottom, rgba(34, 40, 48, 0.75), rgba(34, 40, 48, 0.75));
         }
     }
-    #testimonials {
+    #section3 {
         background-image: url(https://ucarecdn.com/f7a55338-ea7b-42c8-9cd5-4bd4d29cf0b9/-/format/auto/-/progressive/yes/-/quality/lightest/);
         background-position: center;
         background-repeat: no-repeat;
@@ -152,7 +152,41 @@ div#fullpage {
             top: 0;
             left: 0;
             z-index: -2;
-            background: linear-gradient(to bottom, rgba(234,170,0,0.6), rgba(234,170,0,0.6));
+            background: linear-gradient(to bottom, rgba(95, 84, 50, 0.8), rgba(95, 84, 50, 0.8));
+        }
+    }
+    #section4 {
+        background-image: url(https://ucarecdn.com/1cd0a5a5-113d-44a8-8dd0-30a6814d4dfd/-/format/auto/-/progressive/yes/-/quality/lightest/);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -3;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            background: linear-gradient(to bottom, rgba(34, 40, 48, 0.75), rgba(34, 40, 48, 0.75));
+        }
+    }
+    #section5 {
+        background-image: url(https://ucarecdn.com/e06286fa-87d8-49fc-b3d0-439636e6b058/-/format/auto/-/progressive/yes/-/quality/lightest/);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -3;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            background: linear-gradient(to bottom, rgba(95, 84, 50, 0.8), rgba(95, 84, 50, 0.8));
         }
     }
     div.layer {
@@ -170,13 +204,14 @@ div#fullpage {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         .boxedIn {
             border-radius: 2px;
             @include shade(0.125);
             height: 50vh;
             background: rgba(255,255,255,0.9);
             width: 60vw;
-            padding: 2rem;                   
+               
             &:not(#seller){
                 overflow-y: scroll;
                 h2{
@@ -184,13 +219,25 @@ div#fullpage {
                     font-size: 2em;
                 }
             }
+            &:not(.videoBoxedIn){
+                padding: 2rem;
+                overflow-y: scroll;
+            }  
+            &.videoBoxedIn{
+                overflow-y: hidden !important;
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+            }
             iframe {
                 &#tc-video {
-                    width: 67.5%;
-                    height: 75%;
+                    width: 300px;
+                    height: 160px;
                     @media screen and (max-width: 767px) {
-                        width: 95%;
-                        height: 55%;
+                        width: 100%;
+                        height: 42%;
                     }
                 }
             }

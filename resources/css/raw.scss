@@ -3,6 +3,7 @@
 
 $rcgc_blue: #002f6c;
 $rcgc_grey_accent: #98a1ad;
+$fab-button: #006eff;
 $rcgc_yellow: #eaaa00;
 $height: 58px;
 $font-family: 'Open Sans', sans-serif;
@@ -24,6 +25,7 @@ $dark_slate_grey: #2F4856;
 }
 
 @import 'base';
+@import 'fab';
 @import 'navdots';
 @import 'dt_arrows';
 @import 'header';

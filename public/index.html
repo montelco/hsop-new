@@ -13,7 +13,12 @@
     <meta name="theme-color" content="#002f6c">
 </head>
 <body>
-    <header id="top" class="mbl-bg">
+    <fab>
+        <div class="fab">
+            <i class="material-icons">mail_outline</i>
+        </div>
+    </fab>
+    <header id="top" class="mbl-bg bg">
         <div class="container">
             <div class="logoContainer">
                 <img class="logo" src="https://ucarecdn.com/43617a9e-51dc-4068-b161-670c4fbc0fff/-/format/auto/-/progressive/yes/-/quality/lightest/-/resize/390x/" alt="RCGC Torch">
@@ -46,20 +51,63 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="steps">
+        <div class="section" id="section1">
+            <h2>Program Overview</h2>
+            <div class="boxedIn">
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <h2>Program Benefits</h2>
+            <div class="boxedIn">
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <h2>See the Savings</h2>
+            <div class="boxedIn">
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <h2>Am I Eligible?</h2>
+            <div class="boxedIn">
+            </div>
+        </div>
+        <div class="section" id="section5">
             <div class="slide">
-                <div class="boxedIn">
-                    <h2>Enrollment Is Easy</h2>
-                    <iframe id="tc-video" src="https://www.youtube-nocookie.com/embed/e7WG47WAVD8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h2>Enrollment Is Easy</h2>
+                <div class="boxedIn videoBoxedIn" id="slide1">
+                    <iframe id="tc-video" src="https://www.youtube-nocookie.com/embed/AWOpL10q9dE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <article>
+                        <ol>
+                            <li>Submit documents to RCGC's Office of Admissions:
+                                <ul>
+                                    <li><a href="#">High School Participation Form</a></li>
+                                    <li>High School Transcripts</li>
+                                </ul>
+                            </li>
+                            <li>Take RCGC's <a href="#">Placement Test:</a>
+                                <ul>
+                                    <li>Note: You may be <a href="#">exempt</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                Register for Classes with an HSOP advisor:
+                                <ul>
+                                    <li><a href="#Steps/pickhighschool">Make an Appointment</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </article>
                 </div>
             </div>
-            <div class="slide">
-                <div class="boxedIn">
+            <div class="slide" data-anchor="pickhighschool">
+                <a href="#Steps">Go Back</a>
+                <input type="search" placeholder="What High School Do You Attend?">
+                <!-- <div class="boxedIn">
                     <span class="number">1</span>
                     <span class="step-head">Step</span>
-                </div>
+                </div> -->
             </div>
-            <div class="slide">
+            <!-- <div class="slide">
                 <div class="boxedIn">
                     <span class="number">2</span>
                     <span class="step-head">Step</span>
@@ -82,28 +130,18 @@
                     <span class="number">5</span>
                     <span class="step-head">Step</span>
                 </div>
-            </div>
-        </div>
-        <div class="section" id="about">
-            <div class="boxedIn">
-                <h1>To See How It'll All Look</h1>
-            </div>
-        </div>
-        <div class="section" id="testimonials">
-            <div class="boxedIn">
-                <h1>Hopefully Half Decent</h1>
-            </div>
+            </div> -->
         </div>
     </div>
-    <script src="../bower_components/fullpage.js/dist/jquery.fullpage.js" async ></script>
+    <script src="../bower_components/fullpage.js/dist/jquery.fullpage.min.js" async ></script>
     <script type="text/javascript" >
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 verticalCentered: true,
                 navigation: true,
-                continuousHorizontal:true,
                 navigationPosition: 'right',
-                navigationTooltips: ['Home', 'Application Process', 'Stats', 'Testimonials']
+                navigationTooltips: ['Home', 'Overview', 'Benefits/Courses', 'See the Savings', 'Eligibility', 'Enroll in 3 Easy Steps'],
+                anchors: ['Home', 'Overview', 'Benefits', 'Savings', 'Eligibility', 'Steps'],
             });
         });
     </script>
