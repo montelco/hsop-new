@@ -5,7 +5,7 @@ $rcgc_blue: #002f6c;
 $rcgc_grey_accent: #98a1ad;
 $fab-button: #006eff;
 $rcgc_yellow: #eaaa00;
-$height: 58px;
+$height: 54px;
 $font-family: 'Open Sans', sans-serif;
 $font-color: white;
 $font-size: 16px;
@@ -15,10 +15,12 @@ $catchy-subline-size: 3rem;
 $mbl_catchy_ss: $catchy-subline-size/3;
 $catchy: #005496;
 $catchy-subline: #F0961E;
-$catchy-small: #4e5c67;
+$catchy-small: #334865;
 $cta-bg: #3c729a;
 $cta-text: #E7EFF5;
 $dark_slate_grey: #2F4856;
+$seller: #153b6d;
+$box-text: #0b0b0b;
 
 @mixin shade($strength) {
     box-shadow: 0rem 0.5rem 0.75rem rgba(0,0,0,$strength);
@@ -26,9 +28,11 @@ $dark_slate_grey: #2F4856;
 
 @import 'base';
 @import 'fab';
+@import 'modal';
 @import 'navdots';
 @import 'dt_arrows';
 @import 'appointment';
 @import 'header';
 @import 'fullpage';
+@import 'pricing';
 @import 'mobile';

@@ -13,11 +13,39 @@
     <meta name="theme-color" content="#002f6c">
 </head>
 <body>
-    <fab>
+    <fab onclick="document.getElementById('id01').style.display='flex'">
         <div class="fab">
             <i class="material-icons">mail_outline</i>
         </div>
     </fab>
+    <div id="id01" class="modal">
+          <div class="modal-content">
+            <div class="container">
+              <span onclick="document.getElementById('id01').style.display='none'" 
+              class="button display-topright">&times;</span>
+              <div id="wufoo-z1qrwrsj0mmufpq">
+                Fill out my <a href="https://rowancollege.wufoo.com/forms/z1qrwrsj0mmufpq">online form</a>.
+            </div>
+                <script type="text/javascript">var z1qrwrsj0mmufpq;(function(d, t) {
+                var s = d.createElement(t), options = {
+                'userName':'rowancollege',
+                'formHash':'z1qrwrsj0mmufpq',
+                'autoResize':true,
+                'height':'383',
+                'async':true,
+                'host':'wufoo.com',
+                'header':'show',
+                'ssl':true};
+                s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                s.onload = s.onreadystatechange = function() {
+                var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                try { z1qrwrsj0mmufpq = new WufooForm();z1qrwrsj0mmufpq.initialize(options);z1qrwrsj0mmufpq.display(); } catch (e) {}};
+                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                })(document, 'script');</script>
+            </div>
+          </div>
+    </div>
+
     <header id="top" class="mbl-bg bg">
         <div class="container">
             <div class="logoContainer">
@@ -38,42 +66,152 @@
         <div class="section" id="section0">
             <section id="vidContainer">
             </section>
-            <video id="myVideo" loop muted data-autoplay preload="auto" poster="../resources/graphics/video.gif">
-                <source class="dt-only" data-src="../resources/graphics/video.webm" type="video/webm" />
-                <source class="dt-only" data-src="../resources/graphics/video.mp4" type="video/mp4" />
+            <video id="myVideo" loop muted data-autoplay preload="auto" poster="../resources/graphics/tommy-cover.jpg">
+                <source class="dt-only" data-src="../resources/graphics/tvid.mp4" type="video/mp4" />
                 <source data-src="../resources/graphics/exported-tiny.mp4" type="video/mp4" />
             </video>
             <div class="layer">
                 <div class="boxedIn" id="seller">
-                    <h1><span class="jumbo">Save 65%</span><br><span class="md-jumbo">On Tuition & Fees</span></h1>
+                    <h1><span class="jumbo">Save 65%</span></h1>
+                    <h1 class="oneFive"><span class="md-jumbo">On Tuition & Fees</span></h1>
                     <h2>Earn College Credit<br>While in High School</h2>
                     <button class="cta"><span>Enroll Now</span></button>
                 </div>
             </div>
         </div>
         <div class="section" id="section1">
-            <h2>Program Overview</h2>
-            <div class="boxedIn">
+            <h2 class="ct">Program Overview</h2>
+            <div class="boxedIn videoBoxedIn" id="slide1">
+                <iframe id="tc-video" src="https://www.youtube-nocookie.com/embed/AWOpL10q9dE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <article>
+                    <p>The High School Option Program (HSOP) was designed to provide high schools students with the opportunity to start taking college courses at a 65 percent discount off of Rowan College's (RCGC) tuition and per credit fees.</p>
+                    <p>Completed courses under the HSOP program can be applied to a RCGC associate degree program or easily transferred to other institutions of higher education.</p>
+                </article>
             </div>
         </div>
         <div class="section" id="section2">
-            <h2>Program Benefits</h2>
-            <div class="boxedIn">
+            <h2 class="ct">Gain A Competitive Edge</h2>
+            <div class="boxedIn videoBoxedIn rr-dt" id="slide1">
+                <iframe id="tc-video" src="https://www.youtube-nocookie.com/embed/e7WG47WAVD8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <article>
+                    <ul>
+                        <li>Personalized advisement for course selection</li>
+                        <li>Complete any required remediation</li>
+                        <li>Satisfy general education electives</li>
+                        <li>Chip away at degree requirements </li>
+                        <li>Explore career pathways</li>
+                        <li>Learn how to navigate higher education prior to HS graduation</li>
+                    </ul>
+                </article>
             </div>
         </div>
         <div class="section" id="section3">
-            <h2>See the Savings</h2>
-            <div class="boxedIn">
+            <h2 class="ct hidden-mbl">See the Savings</h2>
+            <div id="pricing-table" class="clear hidden-mbl">
+                <div class="plan">
+                    <h3>3 Credits<span>$$<br><small>$$$$</small></span></h3>
+                    <a class="signup" href="#">Enroll Now</a>         
+                    <ul>
+                        <li><b>Save</b> $$$</li>
+                        <li><b>Out-of-County Rate</b> only $$</li>
+                        <li><i>*In-County Rate</i></li>
+                        <li><b>Many</b> Course Options</li>              
+                    </ul> 
+                </div>
+                <div class="plan">
+                    <h3>6 Credits<span>$$<br><small>$$$$</small></span></h3>
+                    <a class="signup" href="#">Enroll Now</a>         
+                    <ul>
+                        <li><b>Save</b> $$$</li>
+                        <li><b>Out-of-County Rate</b> only $$</li>
+                        <li><i>*In-County Rate</i></li>
+                        <li><b>Many</b> Course Options</li>              
+                    </ul>    
+                </div>
+                <div class="plan" id="most-popular">
+                    <h3>9 Credits<span>$$<br><small>$$$$</small></span></h3>
+                    <a class="signup" href="#">Enroll Now</a>         
+                    <ul>
+                        <li><b>Save</b> $$$</li>
+                        <li><b>Out-of-County Rate</b> only $$</li>
+                        <li><i>*In-County Rate</i></li>
+                        <li><b>Many</b> Course Options</li>              
+                    </ul> 
+                </div>
+                <div class="plan">
+                    <h3>12 Credits<span>$$<br><small>$$$$</small></span></h3>
+                    <a class="signup" href="#">Enroll Now</a>         
+                    <ul>
+                        <li><b>Save</b> $$$</li>
+                        <li><b>Out-of-County Rate</b> only $$</li>
+                        <li><i>*In-County Rate</i></li>
+                        <li><b>Many</b> Course Options</li>              
+                    </ul> 
+                </div>  
+            </div>
+            <div class="boxedIn videoBoxedIn only-mbl" id="SeeTheSavings">
+                <img src="../resources/graphics/see-the-savings.jpg" alt="RCGC is far less expensive than comparable institutions." class="img-responsive">
+                <article>
+                    <h3>In-County Rates</h3>
+                    <table class="pure-table">
+                        <thead>
+                            <tr>
+                                <th># of Credits</th>
+                                <th>Normal Price</th>
+                                <th>65% Off Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="pure-table-odd">
+                                <td>3 Credits</td>
+                                <td>$$$$</td>
+                                <td>$$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Out-Of-County Rates</h3>
+                    <table class="pure-table">
+                        <thead>
+                            <tr>
+                                <th># of Credits</th>
+                                <th>Normal Price</th>
+                                <th>65% Off Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="pure-table-odd">
+                                <td>3 Credits</td>
+                                <td>$$$$</td>
+                                <td>$$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
             </div>
         </div>
         <div class="section" id="section4">
-            <h2>Am I Eligible?</h2>
-            <div class="boxedIn">
+            <h2 class="ct">Am I Eligible?</h2>
+            <div class="boxedIn videoBoxedIn rr-dt">
+                <img src="https://photos.smugmug.com/2017/2017-High-School-Collegiate-Scholar/n-ngq63Z/i-3K92CBX/2/0e31e8ba/X3/i-3K92CBX-X3.jpg" alt="Our collegiate scholars." class="img-responsive">
+                <article>
+                    <ul>
+                        <li>Students 15 years of age and older who have completed freshman year of high school</li>
+                        <li>In county residents</li>
+                        <li>Out of county residents *see out of county discounted rates</li>
+                        <li>Students who attend:
+                            <ul>
+                                <li>Public school</li>
+                                <li>Private school</li>
+                                <li>Homeschool </li> 
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
             </div>
         </div>
         <div class="section" id="section5">
             <div class="slide">
-                <h2>Enrollment Is Easy</h2>
+                <h2 class="ct">Enrollment Is Easy</h2>
                 <div class="boxedIn videoBoxedIn" id="slide1">
                     <iframe id="tc-video" src="https://www.youtube-nocookie.com/embed/AWOpL10q9dE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     <article>
@@ -92,58 +230,31 @@
                             <li>
                                 Register for Classes with an HSOP advisor:
                                 <ul>
-                                    <li><a href="#Steps/pickhighschool">Make an Appointment</a></li>
+                                    <li><a href="#Steps/myadvisor">Make an Appointment</a></li>
                                 </ul>
                             </li>
                         </ol>
                     </article>
                 </div>
             </div>
-            <div class="slide" data-anchor="pickhighschool">
-                <h2>What High School Do You Attend?</h2>
-                <a href="#Steps">Go Back</a>
-                <input type="search" placeholder="What High School Do You Attend?">
-                <a href="#Steps/myadvisor">THIS WOULD BE AN AUTOMATIC ACTION ON GO/ENTER</a>
-                <!-- <div class="boxedIn">
-                    <span class="number">1</span>
-                    <span class="step-head">Step</span>
-                </div> -->
-            </div>
-            <!-- <div class="slide">
-                <div class="boxedIn">
-                    <span class="number">2</span>
-                    <span class="step-head">Step</span>
-                </div>
-            </div> -->
             <div class="slide" data-anchor="myadvisor">
                 <h2>Meet Your Advisor</h2>
                 <div class="boxedIn">
                     <div class="thumbnail">
                         <img src="https://www.rcgc.edu/DesignYourFuture/PublishingImages/Pages/HSOP---Make-An-Appointment/Andrea%20Fau.jpg" alt="Andrea Fau">
                     </div>
-                    
                     <article>
                         <h3>Andrea Fau</h3>
                         <button class="cta">Schedule Appointment</button>
                         <section class="funFacts">
                             About Andrea...
+                            <p>
+                                Andrea grew up in South Jersey and took courses at Camden County College as a high school senior. After high school, she attended the Rochester Institute of Technology and holds a BS in ASL-English Interpretation, as well as a Master’s degree with concentrations in Psychology and Secondary Education. For a number of years, she has conducted College and Career Exploration sessions with college-bound high school students.
+                            </p>
                         </section>
                     </article>
-                    
                 </div>
             </div>
-            <!-- <div class="slide">
-                <div class="boxedIn">
-                    <span class="number">4</span>
-                    <span class="step-head">Step</span>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="boxedIn">
-                    <span class="number">5</span>
-                    <span class="step-head">Step</span>
-                </div>
-            </div> -->
         </div>
     </div>
     <script src="../bower_components/fullpage.js/dist/jquery.fullpage.min.js" async ></script>

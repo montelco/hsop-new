@@ -28,15 +28,15 @@ div#fullpage {
             .cta{
                 color: $cta-text;
                 font-size: $mbl_catchy_ss;
-                padding: $mbl_catchy_ss * 1.5;
+                padding: $mbl_catchy_ss * 1.15;
                 line-height: $mbl_catchy_ss - 1;
                 border: none;
                 border-radius: $mbl_catchy_ss / 5;
-                background: $fab-button;
+                background: $seller;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-top: 0.5rem;
+                margin-top: 0.65rem;
             }
         }
     }
