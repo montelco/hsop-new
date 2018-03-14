@@ -1,0 +1,64 @@
+article{
+    h3 {
+        &.primary {
+            font-size: 18px;
+        }
+    }
+    ul, ol {
+        li {
+            list-style-type: none;
+            font-size: 16px;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            &.close{
+                margin-bottom: 2px;
+            }
+            a {
+                font-weight: 600;
+                color: rgb(30,30,30);
+                &:visited {
+                    color: rgb(30,30,30);
+                }
+                &:hover, &:focus, &:active {
+                    color: rgb(50,50,50);
+                }
+            }
+            ul {
+                margin-top: 2px;
+            }
+        }
+    }
+    ul {
+        li {
+            &:before{
+                font-family: 'Material Icons';
+                color: rgb(40,40,40);
+                content: 'check';
+                padding-right: 4px;
+            }
+        }
+    }
+    ol {
+        li {
+            &.enrollment {
+                &:before {
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'assignment_turned_in';
+                    padding-right: 4px;
+                }
+                ul {
+                    margin-top: 2px;
+                    padding-left: 4px;
+                }
+            }
+        }
+    }
+    h3 + ul{
+        padding-left: 0px;
+    }
+    h3 + ol {
+        padding-left: 2px;
+    }    
+}

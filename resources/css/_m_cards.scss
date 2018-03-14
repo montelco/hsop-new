@@ -3,10 +3,12 @@
         &.fp-prev {
             border-width: 24.5px 20px 24.5px 0;
             border-color: transparent rgba(212, 212, 212, 0.75) transparent transparent;
+            display: none;
         }
         &.fp-next {
             border-width: 24.5px 0 24.5px 20px;
             border-color: transparent transparent transparent rgba(212, 212, 212, 0.75);
+            display: none;
         }
     }
     div#fullpage & .slide {

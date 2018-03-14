@@ -238,7 +238,7 @@ div#fullpage {
                 }
             }
             &:not(#seller){
-                overflow-y: scroll;
+                overflow-y: scroll !important;
                 h2{
                     color: $catchy;
                     font-size: 2em;
@@ -252,7 +252,9 @@ div#fullpage {
                 overflow-y: hidden !important;
                 @media screen and (min-width: 768px) {
                     display: flex;
-                    align-items: center;
+                    &.aic {
+                        align-items: center;
+                    }
                     justify-content: space-between;
                     max-width: 840px;
                     article {
@@ -264,7 +266,7 @@ div#fullpage {
                     }
                 }
                 @media screen and (max-width: 767px) {
-                    height: 75vh;
+                    height: 77vh;
                 }
             }
             img{

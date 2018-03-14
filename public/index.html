@@ -109,7 +109,7 @@
         </div>
         <div class="section" id="section1">
             <h2 class="ct">Program Overview</h2>
-            <div class="boxedIn videoBoxedIn" id="slide1">
+            <div class="boxedIn videoBoxedIn aic" id="slide1">
                 <section class="hero video">
                     <i class="material-icons" onclick="revealVideo('video1','njtv')">play_arrow</i>
                     <img src="../resources/graphics/njtv-interview.png" alt="NJTV HSOP Video. Click to watch." class="img-responsive" onclick="revealVideo('video1','njtv')">
@@ -128,6 +128,8 @@
                     <img src="../resources/graphics/tom-copsetta-promo.png" alt="Tom Copsetta HSOP Video. Click to watch." class="img-responsive" onclick="revealVideo('video2','tommy')">
                 </section>
                 <article>
+                    <h3 class="primary">There's many reasons to join HSOP</h3>
+                    <h3>Here's just a few:</h3>
                     <ul>
                         <li>Personalized advisement for course selection</li>
                         <li>Complete any required remediation</li>
@@ -230,18 +232,20 @@
                     <img src="https://photos.smugmug.com/2017/2017-High-School-Collegiate-Scholar/n-ngq63Z/i-3K92CBX/2/0e31e8ba/X3/i-3K92CBX-X3.jpg" alt="Our collegiate scholars." class="img-responsive">
                 </section>
                 <article>
+                    <h3>You're eligible if you are...</h3>
                     <ul>
-                        <li>Students 15 years of age and older who have completed freshman year of high school</li>
-                        <li>In county residents</li>
-                        <li>Out of county residents *see out of county discounted rates</li>
-                        <li>Students who attend:
+                        <li>A student who has completed <strong>freshman</strong> year of high school</li>
+                        <li>An <strong>in-county</strong> resident</li>
+                        <li>An <strong>out-of-county</strong> resident*</li>
+                        <li>A student who attends:
                             <ul>
-                                <li>Public school</li>
-                                <li>Private school</li>
-                                <li>Homeschool </li> 
+                                <li class="close">Public school</li>
+                                <li class="close">Private school</li>
+                                <li class="close">Homeschool </li> 
                             </ul>
                         </li>
                     </ul>
+                    <small style="float:right;"><em>*see out-of-county rates</em></small>
                 </article>
             </div>
         </div>
@@ -254,19 +258,20 @@
                         <img src="../resources/graphics/njtv-interview.png" alt="NJTV HSOP Video. Click to watch." class="img-responsive" onclick="revealVideo('video1','njtv')">
                     </section>
                     <article>
+                        <h3>Enroll in 3 Easy Steps</h3>
                         <ol>
-                            <li>Submit documents to RCGC's Office of Admissions:
+                            <li class="enrollment">Submit documents to RCGC's Office of Admissions:
                                 <ul>
                                     <li><a href="#">High School Participation Form</a></li>
                                     <li>High School Transcripts</li>
                                 </ul>
                             </li>
-                            <li>Take RCGC's <a href="#">Placement Test:</a>
+                            <li class="enrollment">Take RCGC's <a href="#">Placement Test:</a>
                                 <ul>
                                     <li>Note: You may be <a href="#">exempt</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="enrollment">
                                 Register for Classes with an HSOP advisor:
                                 <ul>
                                     <li><a href="#Steps/myadvisor">Make an Appointment</a></li>
@@ -313,7 +318,7 @@
         function revealVideo(div,video_id) {
           var video = document.getElementById(video_id).src;
           document.getElementById(video_id).src = video+'&autoplay=1'; // adding autoplay to the URL
-          document.getElementById(div).style.display = 'block';
+          document.getElementById(div).style.display = 'flex';
         }
 
         // Hiding the lightbox and removing YouTube autoplay
