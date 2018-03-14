@@ -114,7 +114,7 @@ div#fullpage {
         }
     }
     #section1 {
-        background-image: url(https://ucarecdn.com/e06286fa-87d8-49fc-b3d0-439636e6b058/-/format/auto/-/progressive/yes/-/quality/lightest/);
+        background-image: url(https://ucarecdn.com/85cbd154-f058-4b95-8e5d-98c3a2880ec1/-/format/auto/-/progressive/yes/-/quality/lightest/);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -127,11 +127,12 @@ div#fullpage {
             top: 0;
             left: 0;
             z-index: -2;
-            background: linear-gradient(to bottom, rgba(95, 84, 50, 0.8), rgba(95, 84, 50, 0.8));
+            background: linear-gradient(to bottom, rgba(109, 136, 134, 0.75), rgba(109, 136, 134, 0.75));
         }
     }
     #section2 {
-        background-image: url(https://ucarecdn.com/1cd0a5a5-113d-44a8-8dd0-30a6814d4dfd/-/format/auto/-/progressive/yes/-/quality/lightest/);
+        // background-image: url(https://ucarecdn.com/1cd0a5a5-113d-44a8-8dd0-30a6814d4dfd/-/format/auto/-/progressive/yes/-/quality/lightest/);
+        background-image: url(https://ucarecdn.com/713f067c-6c27-4de3-963a-0238dd75e06a/-/format/auto/-/progressive/yes/-/quality/lightest/);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -144,10 +145,27 @@ div#fullpage {
             top: 0;
             left: 0;
             z-index: -2;
-            background: linear-gradient(to bottom, rgba(34, 40, 48, 0.75), rgba(34, 40, 48, 0.75));
+            background: linear-gradient(to bottom, rgba(68, 85, 84, 0.75), rgba(68, 85, 84, 0.75));
         }
     }
     #section3 {
+        background-image: url(https://ucarecdn.com/fb9edc27-2f40-4e61-9538-2f6d6fd1f45f/-/format/auto/-/progressive/yes/-/quality/lightest/);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -3;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            background: linear-gradient(to bottom, rgba(109, 136, 134, 0.75), rgba(109, 136, 134, 0.75));
+        }
+    }
+    #section4 {
         background-image: url(https://ucarecdn.com/f7a55338-ea7b-42c8-9cd5-4bd4d29cf0b9/-/format/auto/-/progressive/yes/-/quality/lightest/);
         background-position: center;
         background-repeat: no-repeat;
@@ -161,28 +179,11 @@ div#fullpage {
             top: 0;
             left: 0;
             z-index: -2;
-            background: linear-gradient(to bottom, rgba(95, 84, 50, 0.8), rgba(95, 84, 50, 0.8));
-        }
-    }
-    #section4 {
-        background-image: url(https://ucarecdn.com/1cd0a5a5-113d-44a8-8dd0-30a6814d4dfd/-/format/auto/-/progressive/yes/-/quality/lightest/);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -3;
-        &::before{
-            position: absolute;
-            content: "";
-            height: 100vh;
-            width: 100vw;
-            top: 0;
-            left: 0;
-            z-index: -2;
-            background: linear-gradient(to bottom, rgba(34, 40, 48, 0.75), rgba(34, 40, 48, 0.75));
+            background: linear-gradient(to bottom, rgba(68, 85, 84, 0.75), rgba(68, 85, 84, 0.75));
         }
     }
     #section5 {
-        background-image: url(https://ucarecdn.com/e06286fa-87d8-49fc-b3d0-439636e6b058/-/format/auto/-/progressive/yes/-/quality/lightest/);
+        background-image: url(https://ucarecdn.com/d5a5782c-6cd4-47d6-8964-0835bfe972c2/-/format/auto/-/progressive/yes/-/quality/lightest/);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -195,7 +196,7 @@ div#fullpage {
             top: 0;
             left: 0;
             z-index: -2;
-            background: linear-gradient(to bottom, rgba(95, 84, 50, 0.8), rgba(95, 84, 50, 0.8));
+            background: linear-gradient(to bottom, rgba(109, 136, 134, 0.75), rgba(109, 136, 134, 0.75));
         }
     }
     div.layer {
