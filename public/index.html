@@ -46,6 +46,34 @@
           </div>
     </div>
 
+    <!-- NJTV HSOP Video Lightbox -->
+    <div id="video1" class="lightbox" onclick="hideVideo('video','youtube')">
+        <div class="lightbox-container">  
+        <div class="lightbox-content">
+            <button onclick="hideVideo('video1','njtv')" class="lightbox-close">
+                ✕
+            </button>
+            <div class="video-container">
+                <iframe id="njtv" width="960" height="540" src="https://www.youtube-nocookie.com/embed/AWOpL10q9dE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>      
+        </div>
+        </div>
+    </div>
+
+    <!-- Copsetta Promo Video -->
+    <div id="video2" class="lightbox" onclick="hideVideo('video','youtube')">
+        <div class="lightbox-container">  
+        <div class="lightbox-content">
+            <button onclick="hideVideo('video2','tommy')" class="lightbox-close">
+                ✕
+            </button>
+            <div class="video-container">
+                <iframe id="tommy" width="960" height="540" src="https://www.youtube-nocookie.com/embed/e7WG47WAVD8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>      
+        </div>
+        </div>
+    </div>
+
     <header id="top" class="mbl-bg bg">
         <div class="container">
             <div class="logoContainer">
@@ -82,7 +110,9 @@
         <div class="section" id="section1">
             <h2 class="ct">Program Overview</h2>
             <div class="boxedIn videoBoxedIn" id="slide1">
-                <iframe id="tc-video" src="https://www.youtube-nocookie.com/embed/AWOpL10q9dE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <section class="hero">
+                    <img src="../resources/graphics/njtv-interview.png" alt="NJTV HSOP Video. Click to watch." class="img-responsive" onclick="revealVideo('video1','njtv')">
+                </section>
                 <article>
                     <p>The High School Option Program (HSOP) was designed to provide high schools students with the opportunity to start taking college courses at a 65 percent discount off of Rowan College's (RCGC) tuition and per credit fees.</p>
                     <p>Completed courses under the HSOP program can be applied to a RCGC associate degree program or easily transferred to other institutions of higher education.</p>
@@ -92,7 +122,9 @@
         <div class="section" id="section2">
             <h2 class="ct">Gain A Competitive Edge</h2>
             <div class="boxedIn videoBoxedIn rr-dt" id="slide1">
-                <iframe id="tc-video" src="https://www.youtube-nocookie.com/embed/e7WG47WAVD8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <section class="hero">
+                    <img src="../resources/graphics/tom-copsetta-promo.png" alt="Tom Copsetta HSOP Video. Click to watch." class="img-responsive" onclick="revealVideo('video2','tommy')">
+                </section>
                 <article>
                     <ul>
                         <li>Personalized advisement for course selection</li>
@@ -192,7 +224,9 @@
         <div class="section" id="section4">
             <h2 class="ct">Am I Eligible?</h2>
             <div class="boxedIn videoBoxedIn rr-dt">
-                <img src="https://photos.smugmug.com/2017/2017-High-School-Collegiate-Scholar/n-ngq63Z/i-3K92CBX/2/0e31e8ba/X3/i-3K92CBX-X3.jpg" alt="Our collegiate scholars." class="img-responsive">
+                <section class="hero">
+                    <img src="https://photos.smugmug.com/2017/2017-High-School-Collegiate-Scholar/n-ngq63Z/i-3K92CBX/2/0e31e8ba/X3/i-3K92CBX-X3.jpg" alt="Our collegiate scholars." class="img-responsive">
+                </section>
                 <article>
                     <ul>
                         <li>Students 15 years of age and older who have completed freshman year of high school</li>
@@ -213,7 +247,9 @@
             <div class="slide">
                 <h2 class="ct">Enrollment Is Easy</h2>
                 <div class="boxedIn videoBoxedIn" id="slide1">
-                    <iframe id="tc-video" src="https://www.youtube-nocookie.com/embed/AWOpL10q9dE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <section class="hero">
+                        <img src="../resources/graphics/njtv-interview.png" alt="NJTV HSOP Video. Click to watch." class="img-responsive" onclick="revealVideo('video1','njtv')">
+                    </section>
                     <article>
                         <ol>
                             <li>Submit documents to RCGC's Office of Admissions:
@@ -268,6 +304,22 @@
                 anchors: ['Home', 'Overview', 'Benefits', 'Savings', 'Eligibility', 'Steps'],
             });
         });
+    </script>
+    <script>
+        // Function to reveal lightbox and adding YouTube autoplay
+        function revealVideo(div,video_id) {
+          var video = document.getElementById(video_id).src;
+          document.getElementById(video_id).src = video+'&autoplay=1'; // adding autoplay to the URL
+          document.getElementById(div).style.display = 'block';
+        }
+
+        // Hiding the lightbox and removing YouTube autoplay
+        function hideVideo(div,video_id) {
+          var video = document.getElementById(video_id).src;
+          var cleaned = video.replace('&autoplay=1',''); // removing autoplay form url
+          document.getElementById(video_id).src = cleaned;
+          document.getElementById(div).style.display = 'none';
+        }
     </script>
     <!-- <script src="../resources/js/header-transparency.js"></script> -->
 </body>

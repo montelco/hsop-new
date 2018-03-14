@@ -27,6 +27,7 @@ $box-text: #0b0b0b;
 }
 
 @import 'base';
+@import 'youtube-lightbox';
 @import 'fab';
 @import 'modal';
 @import 'navdots';
@@ -34,5 +35,6 @@ $box-text: #0b0b0b;
 @import 'appointment';
 @import 'header';
 @import 'fullpage';
+@import 'hero';
 @import 'pricing';
 @import 'mobile';
