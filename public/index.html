@@ -81,14 +81,14 @@
                 <img class="logo" src="https://ucarecdn.com/43617a9e-51dc-4068-b161-670c4fbc0fff/-/format/auto/-/progressive/yes/-/quality/lightest/-/resize/390x/" alt="RCGC Torch">
             </div>
             <h1 class="hidden-mbl">High School Option Program</h1>
-            <nav>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="#top">Home</a></li>
                     <li><a href="#">Make an Appointment</a></li>
                     <li><a href="">Contact Us</a></li>
                 </ul>
             </nav>
-            <nav class="mbl"><i class="material-icons">menu</i></nav>
+            <a id="hamburger"><nav class="mbl"><i class="material-icons" id="ham">menu</i></nav></a>
         </div>
     </header>
     <div id="fullpage">
@@ -96,8 +96,8 @@
             <section id="vidContainer">
             </section>
             <video id="myVideo" loop muted data-autoplay preload="auto" poster="../resources/graphics/tommy-cover.jpg">
-                <source class="dt-only" data-src="../resources/graphics/tvid.mp4" type="video/mp4" />
-                <source data-src="../resources/graphics/exported-tiny.mp4" type="video/mp4" />
+                <source class="dt-only" data-src="https://endgrain.coffee/img/tvid.mp4" type="video/mp4" />
+                <source data-src="https://endgrain.coffee/img/exported-tiny.mp4" type="video/mp4" />
             </video>
             <div class="layer">
                 <div class="boxedIn" id="seller">
@@ -110,14 +110,21 @@
         </div>
         <div class="section" id="section1">
             <h2 class="ct">Program Overview</h2>
-            <div class="boxedIn videoBoxedIn aic" id="slide1">
+            <div class="boxedIn videoBoxedIn" id="slide1">
                 <section class="hero video">
                     <i class="material-icons" onclick="revealVideo('video1','njtv')">play_arrow</i>
                     <img src="../resources/graphics/njtv-interview.png" alt="NJTV HSOP Video. Click to watch." class="img-responsive" onclick="revealVideo('video1','njtv')">
                 </section>
-                <article>
-                    <p>The High School Option Program (HSOP) was designed to provide high schools students with the opportunity to start taking college courses at a 65 percent discount off of Rowan College's (RCGC) tuition and per credit fees.</p>
-                    <p>Completed courses under the HSOP program can be applied to a RCGC associate degree program or easily transferred to other institutions of higher education.</p>
+                <article class="mbl-padding">
+                    <h3 class="hidden-mbl">What is HSOP?</h3>
+                    <p class="hidden-mbl">The High School Option Program (HSOP) was designed to provide high schools students with the opportunity to start taking college courses at a 65 percent discount off of Rowan College's (RCGC) tuition and per credit fees.</p>
+                    <h3>Why HSOP?</h3>
+                    <ul>
+                        <li class="thumb">Easily transfer college credits</li>
+                        <li class="trending_up">An option on the rise</li>
+                        <li class="money_off">Reduce your costs by <strong>thousands</strong></li>
+                        <li class="watch_later">Save time getting your degree</li>
+                    </ul>
                 </article>
             </div>
         </div>
@@ -311,6 +318,19 @@
                 navigationPosition: 'right',
                 navigationTooltips: ['Home', 'Overview', 'Benefits/Courses', 'See the Savings', 'Eligibility', 'Enroll in 3 Easy Steps'],
                 anchors: ['Home', 'Overview', 'Benefits', 'Savings', 'Eligibility', 'Steps'],
+            });
+        });
+    </script>
+    <script>
+        $.fn.toggleText = function(t1, t2){
+          if (this.text() == t1) this.text(t2);
+          else                   this.text(t1);
+          return this;
+        };
+        $(document).ready(function() {
+            $('#hamburger').click(function() {
+                $('#main-nav').toggleClass('open');
+                $('#ham').toggleText('close', 'menu');
             });
         });
     </script>

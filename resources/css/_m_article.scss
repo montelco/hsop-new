@@ -1,4 +1,7 @@
 article{
+    &.mbl-padding{
+        padding: 18px !important;
+    }
     h3 {
         &.primary {
             font-size: 18px;
@@ -31,6 +34,38 @@ article{
     }
     ul {
         li {
+            &.thumb{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'thumb_up';
+                    padding-right: 4px;
+                }
+            }
+            &.trending_up{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'trending_up';
+                    padding-right: 4px;
+                }
+            }
+            &.money_off{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'money_off';
+                    padding-right: 4px;
+                }
+            }
+            &.watch_later{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'watch_later';
+                    padding-right: 4px;
+                }
+            }
             &:before{
                 font-family: 'Material Icons';
                 color: rgb(40,40,40);

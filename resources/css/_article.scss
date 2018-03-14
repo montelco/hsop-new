@@ -31,11 +31,53 @@ article{
     }
     ul {
         li {
+            &.thumb{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'thumb_up';
+                    padding-right: 8px;
+                }
+            }
+            &.trending_up{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'trending_up';
+                    padding-right: 8px;
+                }
+            }
+            &.money_off{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'money_off';
+                    padding-right: 8px;
+                }
+            }
+            &.watch_later{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'watch_later';
+                    padding-right: 8px;
+                }
+            }
             &:before{
                 font-family: 'Material Icons';
                 color: rgb(40,40,40);
                 content: 'check';
                 padding-right: 8px;
+            }
+            ul {
+                li {
+                    &:before{
+                        font-family: 'Material Icons';
+                        color: rgb(40,40,40);
+                        content: 'school';
+                        padding-right: 8px;
+                    }
+                }
             }
         }
     }

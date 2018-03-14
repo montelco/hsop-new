@@ -220,9 +220,17 @@ div#fullpage {
             color: $box-text;
             border-radius: 2px;
             @include shade(0.125);
-            height: 50vh;
             background: rgba(255,255,255,0.9);
             width: 60vw;
+            height: 50vh;
+            &:not(#seller) {
+                @media screen and (min-width: 768px) and (max-width: 1380px){
+                    min-width: 500px;
+                    width: 80vw;
+                    min-height: 280px;
+                    height: 57.5vh;
+                }
+            }
             @media screen and (min-width: 768px) {
                 &.only-mbl {
                     display: none !important;
@@ -238,7 +246,7 @@ div#fullpage {
                 }
             }
             &:not(#seller){
-                overflow-y: scroll !important;
+                overflow-y: auto !important;
                 h2{
                     color: $catchy;
                     font-size: 2em;
@@ -256,7 +264,7 @@ div#fullpage {
                         align-items: center;
                     }
                     justify-content: space-between;
-                    max-width: 840px;
+                    max-width: 990px;
                     article {
                         max-width: 475px;
                         padding: 16px;
@@ -266,7 +274,7 @@ div#fullpage {
                     }
                 }
                 @media screen and (max-width: 767px) {
-                    height: 77vh;
+                    height: 70vh;
                 }
             }
             img{
