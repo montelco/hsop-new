@@ -5,7 +5,7 @@ $rcgc_blue: #002f6c;
 $rcgc_grey_accent: #98a1ad;
 $fab-button: #006eff;
 $rcgc_yellow: #eaaa00;
-$height: 54px;
+$height: 73px;
 $font-family: 'Open Sans', sans-serif;
 $font-color: white;
 $font-size: 16px;
@@ -21,6 +21,8 @@ $cta-text: #E7EFF5;
 $dark_slate_grey: #2F4856;
 $seller: #153b6d;
 $box-text: #0b0b0b;
+
+$links: #14519e;
 
 @mixin shade($strength) {
     box-shadow: 0rem 0.5rem 0.75rem rgba(0,0,0,$strength);

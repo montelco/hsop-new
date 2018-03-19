@@ -11,13 +11,10 @@ header {
         justify-content: space-between;
         padding: 0rem 1rem;
         .logo{
-            width: 5.57 * $height;
+            width: 3.2 * $height;
             height: $height;
             display: inline-block;
             flex: 1;
-            @media screen and (min-width: 768px) {
-                padding-top: 8px;
-            }
         }
         h1{
             color: $font-color;
