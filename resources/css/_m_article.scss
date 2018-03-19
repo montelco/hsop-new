@@ -1,18 +1,20 @@
 article{
     &.mbl-padding{
-        padding: 18px !important;
+        padding: 16px !important;
     }
     h3 {
         &.primary {
-            font-size: 18px;
+            font-size: 14px;
         }
     }
     ul, ol {
         li {
-            list-style-type: none;
-            font-size: 16px;
+            &:not(.three) {
+                list-style-type: none;
+            }
+            font-size: 14px;
             &:not(:last-child) {
-                margin-bottom: 8px;
+                margin-bottom: 6px;
             }
             &.close{
                 margin-bottom: 2px;
@@ -29,10 +31,14 @@ article{
             }
             ul {
                 margin-top: 2px;
+                padding-left: 8px;
             }
         }
     }
     ul {
+        &.nbp-mob{
+            margin-bottom: 0px;
+        }
         li {
             &.thumb{
                 &:before{
@@ -90,7 +96,7 @@ article{
             }
         }
     }
-    h3 + ul{
+    h3 + ul, p + ul{
         padding-left: 0px;
     }
     h3 + ol {

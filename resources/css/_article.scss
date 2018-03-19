@@ -5,11 +5,14 @@ article{
         }
     }
     ul, ol {
+        &.nlp {
+            padding-left: 0px;
+        }
         li {
             list-style-type: none;
-            font-size: 18px;
+            font-size: 16px;
             &:not(:last-child) {
-                margin-bottom: 18px;
+                margin-bottom: 14px;
             }
             &.close{
                 margin-bottom: 4px;
@@ -63,11 +66,99 @@ article{
                     padding-right: 8px;
                 }
             }
+            &.date_range{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'date_range';
+                    padding-right: 8px;
+                }
+            }
+            &.school{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'school';
+                    padding-right: 8px;
+                }
+            }
+            &.class{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'class';
+                    padding-right: 8px;
+                }
+            }
+            &.compare_arrows{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'compare_arrows';
+                    padding-right: 8px;
+                }
+            }
+            &.content_paste{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'content_paste';
+                    padding-right: 8px;
+                }
+            }
+            &.question_answer{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'question_answer';
+                    padding-right: 8px;
+                }
+            }
+            &.announcement{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'announcement';
+                    padding-right: 8px;
+                }
+            }
+            &.account_box{
+                &:before{
+                    font-family: 'Material Icons';
+                    color: rgb(40,40,40);
+                    content: 'account_box';
+                    padding-right: 8px;
+                }
+            }
             &:before{
                 font-family: 'Material Icons';
                 color: rgb(40,40,40);
                 content: 'check';
                 padding-right: 8px;
+            }
+            &.infographic {
+                &:before {
+                    font-size: 20px !important;
+                    color: hsl(214, 40%, 40%) !important;
+                }
+            }
+            &.minor-button {
+                padding: 0.35rem;
+                border-radius: 0.25rem;
+                background: $cta-bg;
+                color: white !important;
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 20px;
+                &.infographic:before {
+                    vertical-align: middle;
+                    color: white !important;
+                }
+                a {
+                    color: white !important;
+                    font-weight: 400;
+                }
             }
             ul {
                 li {
@@ -90,9 +181,17 @@ article{
                     content: 'assignment_turned_in';
                     padding-right: 8px;
                 }
+            }
+            &.three {
                 ul {
                     margin-top: 8px;
                     padding-left: 16px;
+                    &.nlp {
+                        padding-left: 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
             }
         }

@@ -51,6 +51,9 @@ header {
                         &:visited{
                             color: $font-color;
                         }
+                        &.jsa {
+                            cursor: pointer;
+                        }
                     }
                     &:not(:nth-of-type(1)){
                         padding-left: 1em;
@@ -63,6 +66,9 @@ header {
             }
         }
         @media screen and (min-width: 769px) {
+            #hamburger {
+                display: none;
+            }
             nav.mbl{
                 display: none;
             }

@@ -62,14 +62,14 @@ div#fullpage{
             position: relative;
             width: 90vw;
             text-align: left;
-            font-size: 16px;
+            font-size: 14px;
             h1 {
                 color: black;
             }
             article {
                 padding: 0px 8px;
                 overflow: scroll;
-                font-size: 16px;
+                font-size: 14px;
             }
             img {
                 &.img-responsive {
@@ -79,6 +79,13 @@ div#fullpage{
             }
             h3{
                 margin: 0.125em 0em;
+            }
+        }
+    }
+    .fp-tableCell {
+        .fp-scrollable {
+            .fp-scroller {
+                padding-top: 30px;
             }
         }
     }

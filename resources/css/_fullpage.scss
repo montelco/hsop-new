@@ -34,7 +34,8 @@ div#fullpage {
             }
         }
         h2.ct{
-          text-shadow: 0rem 0.25rem 0.85rem rgba(0,0,0,0.5);  
+          text-shadow: 0rem 0.25rem 0.85rem rgba(0,0,0,0.5);
+          margin-bottom: 0.25rem;  
         }
     }
     #section0 {
@@ -263,7 +264,7 @@ div#fullpage {
                     &.aic {
                         align-items: center;
                     }
-                    justify-content: space-between;
+                    // justify-content: space-between;
                     max-width: 990px;
                     article {
                         max-width: 475px;
@@ -274,7 +275,8 @@ div#fullpage {
                     }
                 }
                 @media screen and (max-width: 767px) {
-                    height: 70vh;
+                    min-height: 67.5vh;
+                    max-height: 76vh;
                 }
             }
             img{
