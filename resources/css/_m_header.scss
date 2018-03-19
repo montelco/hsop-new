@@ -3,18 +3,18 @@ header {
     display: block;
     width: 100%;
     z-index: 9999;
-    height: $height;
+    height: ($height - 20px);
     .container{
         display: flex;
-        height: $height;
+        height: ($height - 20px);
         align-items: center;
         justify-content: space-between;
         padding: 0rem 1rem;
         .logoContainer {
             flex: 1;
             .logo{
-                width: 5.57 * ($height / 2);
-                height: ($height / 2);
+                width: 3.2 * ($height - 20px);
+                height: ($height - 20px);
                 display: inline-block;
                 flex: 1;
             }
