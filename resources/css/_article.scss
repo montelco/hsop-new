@@ -130,7 +130,7 @@ article{
                     padding-right: 8px;
                 }
             }
-            &:before{
+            &:before:not(.none){
                 font-family: 'Material Icons';
                 color: rgb(40,40,40);
                 content: 'check';

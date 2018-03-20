@@ -293,9 +293,10 @@ div#fullpage {
                     article {
                         max-width: 475px;
                         padding: 16px;
-                        text-align: justify;
+                        text-align: left;
                         font-size: 18px;
                         font-weight: 400;
+                        width: 100%;
                     }
                 }
                 @media screen and (max-width: 767px) {

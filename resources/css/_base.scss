@@ -2,3 +2,7 @@ body {
     overflow-x: hidden !important;
     font-family: $font-family, sans-serif; 
 }
+.hidden {
+    opacity: 0 !important;
+    transition: opacity 0.3s ease-in-out;
+}
