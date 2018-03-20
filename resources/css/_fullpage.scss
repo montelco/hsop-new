@@ -120,7 +120,7 @@ div#fullpage {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: -3;
+        z-index: 0;
         &::before{
             position: absolute;
             content: "";
@@ -138,7 +138,7 @@ div#fullpage {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: -3;
+        z-index: 0;
         &::before{
             position: absolute;
             content: "";
@@ -155,7 +155,7 @@ div#fullpage {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: -3;
+        z-index: 0;
         &::before{
             position: absolute;
             content: "";
@@ -172,7 +172,7 @@ div#fullpage {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: -3;
+        z-index: 0;
         &::before{
             position: absolute;
             content: "";
@@ -189,7 +189,7 @@ div#fullpage {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: -3;
+        z-index: 0;
         &::before{
             position: absolute;
             content: "";
@@ -202,6 +202,7 @@ div#fullpage {
         }
     }
     div.layer {
+        // Changes to be applied: section0& needs top 0, height 100
         position: absolute;
         display: flex;
         align-items: center;
@@ -218,6 +219,7 @@ div#fullpage {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
+        // Changes to be applied: add .fp-scroller{overflow visible, height 100, pos rel} .fp-scrollable {wid 100, hei 100}
         .boxedIn {
             color: $box-text;
             border-radius: 2px;
