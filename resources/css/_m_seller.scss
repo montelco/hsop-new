@@ -26,6 +26,11 @@ div#fullpage {
                 margin-bottom: $mbl_catchy_ss / 3;
             }
 
+            a.no-ad {
+                text-decoration: none;
+                cursor: pointer;
+            }
+
             .cta{
                 color: $cta-text;
                 font-size: $mbl_catchy_ss;
@@ -38,6 +43,7 @@ div#fullpage {
                 align-items: center;
                 justify-content: center;
                 margin-top: 0.65rem;
+                cursor: pointer;
             }
         }
     }

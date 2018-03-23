@@ -93,6 +93,11 @@ div#fullpage {
                 margin-top: $catchy-subline-size / 10;
             }
 
+            a.no-ad {
+                text-decoration: none;
+                cursor: pointer;
+            }
+
             .cta{
                 color: $cta-text;
                 font-size: $catchy-subline-size / 2.15;
@@ -103,6 +108,7 @@ div#fullpage {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                cursor: pointer;
             }
         }
         #vidContainer{
