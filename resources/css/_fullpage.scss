@@ -303,6 +303,8 @@ div#fullpage {
                         font-size: 18px;
                         font-weight: 400;
                         width: 100%;
+                        position: relative;
+                        overflow: scroll;
                     }
                 }
                 @media screen and (max-width: 767px) {
