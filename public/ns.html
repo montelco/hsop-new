@@ -12,6 +12,8 @@
     <script src="../resources/js/no-vid-mobile.js"></script>
     <meta name="theme-color" content="#002f6c">
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
     <fab onclick="document.getElementById('id01').style.display='flex'">
@@ -124,7 +126,7 @@
                     <ul class="nlp">
                         <li class="money_off infographic"><strong>Save 65%</strong> on RCGC Tuition and Fees</li>
                         <li class="watch_later infographic">Get a <strong>head start</strong> on your degree</li>
-                        <li class="date_range infographic">Build a schedule that works for <strong>you</strong></li>
+                        <li class="date_range infographic">Build a <strong>schedule</strong> that works for you</li>
                         <li class="class infographic">Choose from over <strong>70</strong> degree programs</li>
                     </ul>
                     <!-- <h3>Why HSOP?</h3>
@@ -160,9 +162,11 @@
         </div>
         <div class="section" id="section3">
             <h2 class="ct">See the Savings</h2>
-            <h2>KEVIN HAS SVG (TO BE ANIMATED)</h2>
+            <!-- <h2>KEVIN HAS SVG (TO BE ANIMATED)</h2> -->
+            <div class="boxedIn videoBoxedIn padded" id="ovh">
+                <img src="https://www.rcgc.edu/_catalogs/masterpage/images/savings.svg" alt="RCGC is far less expensive than comparable institutions." class="img-responsive svg">
+            </div>
             <!-- <div class="boxedIn videoBoxedIn only-mbl" id="SeeTheSavings">
-                <img src="../resources/graphics/see-the-savings.jpg" alt="RCGC is far less expensive than comparable institutions." class="img-responsive">
                 <article>
                     <h3>In-County Rates</h3>
                     <table class="pure-table">
@@ -203,9 +207,9 @@
         </div>
         <div class="section" id="section4">
             <h2 class="ct">Am I Eligible?</h2>
-            <div class="boxedIn videoBoxedIn rr-dt">
+            <div class="boxedIn videoBoxedIn rr-dt no_over">
                 <section class="hero">
-                    <img src="https://photos.smugmug.com/2017/2017-High-School-Collegiate-Scholar/n-ngq63Z/i-3K92CBX/2/0e31e8ba/X3/i-3K92CBX-X3.jpg" alt="Our collegiate scholars." class="img-responsive">
+                    <img src="https://photos.smugmug.com/2017/2017-High-School-Collegiate-Scholar/n-ngq63Z/i-3K92CBX/2/0e31e8ba/X3/i-3K92CBX-X3.jpg" alt="Our collegiate scholars." class="img-responsive top60">
                 </section>
                 <article>
                     <h3>You're eligible if you...</h3>
@@ -221,7 +225,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <small style="float:right;"><em>*see out-of-county rates</em></small>
+                    <small style="float:right;position: absolute;right: 1em;bottom: 1em;"><em>*see out-of-county rates</em></small>
                 </article>
             </div>
         </div>
@@ -237,59 +241,23 @@
                     <ol>
                         <li class="three">1. Submit documents to RCGC's Office of Admissions:
                             <ul>
-                                <li class="enrollment infographic"><a href="https://www.rcgc.edu/HighSchool/Documents/RCGC-HSOP-APP-December2015.pdf">High School Participation Form</a></li>
-                                <li class="school infographic">High School Transcripts</li>
-                                <li class="none"><small><strong>Note:</strong> Students must have <a href="https://www.rcgc.edu/HighSchool/Documents/RCGC-Photo-ID Notice-7-2015.pdf">Photo ID</a></small></li>
+                                <li class="enrollment infographic sub"><a href="https://www.rcgc.edu/HighSchool/Documents/RCGC-HSOP-APP-December2015.pdf">High School Participation Form</a></li>
+                                <li class="school infographic sub">High School Transcripts</li>
+                                <li class="none sub"><small><strong>Note:</strong> Students must have <a href="https://www.rcgc.edu/HighSchool/Documents/RCGC-Photo-ID Notice-7-2015.pdf">Photo ID</a></small></li>
                             </ul>
                         </li>
                         <li class="three">2. Take RCGC's <a href="https://rcgctesting.setmore.com/">Placement Test:</a>
                             <ul>
-                                <li class="none"><small><strong>Note:</strong> You may be <a href="https://www.rcgc.edu/Testing/Placement/Pages/Exemption-Criteria.aspx">exempt</a></small></li>
+                                <li class="none sub"><small><strong>Note:</strong> You may be <a href="https://www.rcgc.edu/Testing/Placement/Pages/Exemption-Criteria.aspx">exempt</a></small></li>
                             </ul>
                         </li>
                         <li class="three">
                             3. Register for Classes with an HSOP advisor:
                             <ul class="nlp">
-                                <li class="minor-button date_range infographic"><a href="https://www.rcgc.edu/DesignYourFuture/Pages/HSOP---Make-An-Appointment.aspx">Make an Appointment</a></li>
+                                <li class="minor-button"><a href="https://www.rcgc.edu/DesignYourFuture/Pages/HSOP---Make-An-Appointment.aspx">Make an Appointment</a></li>
                             </ul>
                         </li>
                     </ol>
-                </article>
-            </div>
-        </div>
-         <div class="section" id="section6">
-            <h2 class="ct">Scroll Demo</h2>
-            <div class="boxedIn videoBoxedIn rr-dt">
-                <section class="hero video">
-                    <i class="material-icons" onclick="revealVideo('video2','tommy')">play_arrow</i>
-                    <img src="https://ucarecdn.com/a12b9e30-128c-4037-a9b4-2918b202f6b5/-/format/auto/-/progressive/yes/-/quality/lightest/" alt="Tom Copsetta HSOP Video. Click to watch." class="img-responsive" onclick="revealVideo('video2','tommy')">
-                </section>
-                <article>
-                    <section class="overflow_gradient"></section>
-                    <h3>Get an early start to your college career</h3>
-                    <ul class="nbp-mob">
-                        <li class="school infographic">Earn your Associates Degree</li>
-                        <li class="class infographic">Choose from over 70 degree programs</li>
-                        <li class="compare_arrows infographic">Transfer credits to any college or university</li>
-                        <li class="assignment_turned_in infographic">Satisfy general education electives</li>
-                        <li class="content_paste infographic">Complete any required remediation</li>
-                        <li class="question_answer infographic">Personalized advisement for course selection</li>
-                        <li class="date_range infographic">Build a schedule that works for you</li>
-                        <li class="school infographic">Earn your Associates Degree</li>
-                        <li class="class infographic">Choose from over 70 degree programs</li>
-                        <li class="compare_arrows infographic">Transfer credits to any college or university</li>
-                        <li class="assignment_turned_in infographic">Satisfy general education electives</li>
-                        <li class="content_paste infographic">Complete any required remediation</li>
-                        <li class="question_answer infographic">Personalized advisement for course selection</li>
-                        <li class="date_range infographic">Build a schedule that works for you</li>
-                        <li class="school infographic">Earn your Associates Degree</li>
-                        <li class="class infographic">Choose from over 70 degree programs</li>
-                        <li class="compare_arrows infographic">Transfer credits to any college or university</li>
-                        <li class="assignment_turned_in infographic">Satisfy general education electives</li>
-                        <li class="content_paste infographic">Complete any required remediation</li>
-                        <li class="question_answer infographic">Personalized advisement for course selection</li>
-                        <li class="date_range infographic">Build a schedule that works for you</li>
-                    </ul>
                 </article>
             </div>
         </div>

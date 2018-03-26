@@ -13,8 +13,8 @@ article{
                 list-style-type: none;
             }
             font-size: 14px;
-            &:not(:last-child) {
-                margin-bottom: 6px;
+            &.three:not(:last-child) {
+                margin-bottom: 24px;
             }
             &.close{
                 margin-bottom: 2px;
@@ -101,5 +101,6 @@ article{
     }
     h3 + ol {
         padding-left: 2px;
+        margin-bottom: 0.5em;
     }    
 }

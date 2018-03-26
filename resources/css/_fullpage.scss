@@ -1,5 +1,5 @@
 div#fullpage {
-    font-family: $font-family, sans-serif;
+    font-family: $font-family !important;
     color: white;
     .section {
         text-align:center;
@@ -247,6 +247,15 @@ div#fullpage {
                 width: 100%;
             }
         }
+        img {
+            &.svg {
+                min-width: 200px;
+                max-width: 800px;
+                min-height: 100px;
+                max-height: 600px;
+                font-family: "Open Sans";
+            }
+        }
         .boxedIn {
             color: $box-text;
             border-radius: 2px;
@@ -289,6 +298,19 @@ div#fullpage {
             }  
             &.videoBoxedIn{
                 overflow-y: hidden !important;
+                &.padded#ovh {
+                    overflow: hidden !important;
+                    @media screen and (min-width: 768px) {
+                        padding: 2em;
+                    }
+                    @media screen and (max-width: 767px) {
+                        img {
+                            &.img-responsive {
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
                 @media screen and (min-width: 768px) {
                     display: flex;
                     &.aic {
@@ -310,6 +332,15 @@ div#fullpage {
                 @media screen and (max-width: 767px) {
                     min-height: 67.5vh;
                     max-height: 76vh;
+                    &:not(.no_over):after {
+                        height: 5%;
+                        width: 100%;
+                        content: '';
+                        display: block;
+                        position: sticky;
+                        bottom: 0;
+                        background: linear-gradient(rgba(255,255,255,0), #fff);
+                    } 
                 }
             }
             img{
